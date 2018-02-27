@@ -1,4 +1,4 @@
-// Take Input Parameters
+// input the peremiters
 getStartInput();
 getEndInput();
 getStepInput();
@@ -27,7 +27,7 @@ function isStepNegative(param1){
     }
 }
 
-// Qualify Inputs
+// distinguis the inputs
 function checkStart(param1) {
     if (isNaN(param1)) {
         alert('Invalid Input. Please enter a number.')
@@ -51,8 +51,8 @@ function checkStep(param1) {
 
 
 
-// Function 1
-// "The first function generates an array of integer based on the three parameters"
+// 1st function
+// "generates integers"
 
 function myArray(start, end, step) {
     var startCounter = parseInt(start)
@@ -78,8 +78,8 @@ function myArray(start, end, step) {
     return numberArray;
 }
 
-// Function 2
-// "The second one computes the sum of all array elements."
+// 2nd function
+// "The computes the sum."
 function sumArray(myArray) {
     sum = 0
 
@@ -91,8 +91,8 @@ function sumArray(myArray) {
 }
 
 
-// Function 3
-// "The last one converts the value into an array of binary representation of the integers."
+// 3rd function
+// convets value and change intergers"
 function binaryArray(myArray) {
     var binaryArray = []
 
@@ -114,11 +114,11 @@ function getBinary(param1) {
 }
 
 
-const output1 = document.getElementById('result1')
+const output1 = document.getElementById('answer1')
 output1.innerHTML = 'The generated array is ' + myArray(start, end, step)
 
-const output2 = document.getElementById('result2')
+const output2 = document.getElementById('answer2')
 output2.innerHTML = 'The sum is ' + sumArray(myArray(start, end, step))
 
-const output3 = document.getElementById('result3')
+const output3 = document.getElementById('answer3')
 output3.innerHTML = 'The binary of absolute elements is ' + binaryArray(myArray(start, end, step))
